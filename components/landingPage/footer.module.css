@@ -1,0 +1,41 @@
+.main {
+  width: 100%;
+  background-color: hsl(var(--foreground));
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.mainContainer {
+  width: 90%;
+  max-width: var(--maxcontent);
+}
+
+.main p {
+  color: hsl(var(--secondary));
+}
+
+.menus {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.policies {
+  display: flex;
+  width: 100%;
+  padding-top: 3rem;
+  border-top: 0.1rem solid hsl(var(--secondary));
+  flex-wrap: wrap;
+  gap: 3rem;
+  align-items: center;
+  transition: all 500ms ease-in-out;
+  justify-content: space-evenly;
+  text-align: center;
+}
+
+.policies p:hover {
+  color: hsl(var(--primary));
+}
