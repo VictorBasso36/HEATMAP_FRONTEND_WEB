@@ -6,6 +6,7 @@ import Banner from '@/components/landingPage/banner';
 export default function page() {
   return (
     <>
+      <Header />
       <main>
         <Banner />
       </main>

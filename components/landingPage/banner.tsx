@@ -1,9 +1,10 @@
+import Link from 'next/link';
 import { Button } from '../ui/button';
 import style from './banner.module.css';
 
 export default function Banner() {
   return (
-    <main className={style.mainContent}>
+    <div className={style.mainContent}>
       <section className={style.mainContentContainer}>
         <h1>
           All your business, <br /> expenses in one place.
@@ -14,14 +15,18 @@ export default function Banner() {
         </p>
 
         <div className={style.mainContentButtons}>
-          <Button className="w-[180px]">
-            <p style={{ color: 'white' }}>Teste gratuitamente</p>
-          </Button>
-          <Button className="w-[180px]" variant="secondary">
-            Login
-          </Button>
+          <Link href="/register">
+            <Button className="w-[180px]">
+              <p style={{ color: 'white' }}>Teste gratuitamente</p>
+            </Button>
+          </Link>
+          <Link href="/auth">
+            <Button className="w-[180px]" variant="secondary">
+              Login
+            </Button>
+          </Link>
         </div>
       </section>
-    </main>
+    </div>
   );
 }

@@ -7,7 +7,7 @@ export default function Footer() {
       <div className={style.mainContainer}>
         <section>
           <div className={style.menus}>
-            <ul>
+            {/* <ul>
               <li>
                 <p>
                   <strong>LOGO</strong>
@@ -34,7 +34,7 @@ export default function Footer() {
               <li>
                 <p>teste3</p>
               </li>
-            </ul>
+            </ul> */}
           </div>
           <div className={style.policies}>
             <Link href="/PrivacyPolicy">
@@ -55,8 +55,10 @@ export default function Footer() {
           </div>
         </section>
       </div>
-      <p style={{ marginTop: '3rem' }}>
-        <strong>© Heatmap</strong>
+      <p style={{ marginTop: '3rem', textAlign: 'center' }}>
+        <strong style={{ textAlign: 'center' }}>© Heatmap 2024</strong>
+        <br />
+        BassoDev_
       </p>
     </footer>
   );
