@@ -9,7 +9,7 @@ const { auth } = NextAuth(authConfig);
 
 export default auth((req) => {
   if (!req.auth) {
-    const url = req.url.replace(req.nextUrl.pathname, '/');
+    const url = req.url.replace(req.nextUrl.pathname, '/auth');
     return Response.redirect(url);
   }
 });
